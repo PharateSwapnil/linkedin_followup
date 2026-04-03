@@ -18,15 +18,19 @@ template = """
 Write a short, natural LinkedIn message.
 
 Context:
-- Name: {name}
-- Role: {role}
+- My Name: Swapnil
+- My Experience: 3 years Data Engineer (Python, PySpark, AWS)
+- Recipient Name: {name}
+- Recipient Role: {role}
 - Company: {company}
 
 Rules:
+- if role or company is missing or 'nan', just focus on the name and a general greeting
 - Keep it under 3-4 lines
 - Sound human, not salesy
-- Mention something relevant to their role/company
-- Subtly express interest in opportunities
+- Introduce yourself clearly
+- Do NOT assume you are the recipient
+- Subtly express interest in Data Engineer opportunities, Ask for Referrals.
 - End politely
 
 Message:
